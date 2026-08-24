@@ -1,0 +1,1446 @@
+/* ===================================================
+   M.BAQIR DESIGNS
+   Professional Portfolio Website
+   CSS Part 1
+=================================================== */
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background: linear-gradient(
+    135deg,
+    #03071d,
+    #0d1426,
+    #131a2b
+);
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+/* =========================
+SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563EB
+#1D4ED8;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2563eb;
+
+}
+
+/* =========================
+CONTAINER
+========================= */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* =========================
+SECTION
+========================= */
+
+.section{
+
+    padding:120px 0;
+
+}
+
+/* =========================
+HEADINGS
+========================= */
+
+h1{
+
+    font-size:60px;
+
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:28px;
+
+}
+
+h4{
+
+    font-size:20px;
+
+}
+
+p{
+
+    color:#cbd5e1;
+
+}
+
+/* =========================
+LINKS
+========================= */
+
+a{
+
+    text-decoration:none;
+
+    color:white;
+
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+margin-top:20px;
+
+border-radius:50px;
+
+background:#3b82f6;
+
+transition:.4s;
+
+font-weight:600;
+
+}
+
+.btn:hover{
+
+background:#2563eb;
+
+transform:translateY(-5px);
+
+box-shadow:0 15px 35px rgba(59,130,246,.4);
+
+}
+
+.btn2{
+
+background:transparent;
+
+border:2px solid #3b82f6;
+
+margin-left:15px;
+
+}
+
+.btn2:hover{
+
+background:#3b82f6;
+
+}
+
+/* =========================
+SECTION TITLE
+========================= */
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+margin-bottom:15px;
+
+position:relative;
+
+display:inline-block;
+
+}
+
+.section-title h2::after{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+bottom:-10px;
+
+transform:translateX(-50%);
+
+width:70px;
+
+height:4px;
+
+background:#3b82f6;
+
+border-radius:20px;
+
+}/* ==========================================
+   NAVIGATION
+========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:20px 8%;
+
+    background:rgba(6, 10, 32, 0.85);
+
+    backdrop-filter:blur(15px);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:1000;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.logo h2{
+
+    color:#ffffff;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#3B82F6;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#3B82F6;
+
+}
+
+.menu-btn{
+
+    display:none;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:120px 8% 80px;
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-content h4{
+
+    color:#3B82F6;
+
+    margin-bottom:15px;
+
+}
+
+.hero-content h1{
+
+    margin-bottom:15px;
+
+    line-height:1.1;
+
+}
+
+.hero-content h2{
+
+    color:#cbd5e1;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    max-width:600px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+    width:380px;
+    height:500px;
+    object-fit:cover;
+    border-radius:25px;
+    border:4px solid #3B82F6;
+    box-shadow:0 20px 40px rgba(59,130,246,.35);
+    transition:0.4s;
+}
+
+
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================
+   PRELOADER
+========================================== */
+
+#preloader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#020617;
+
+    display:none
+
+    justify-contentcenter
+
+    align-itemscenter
+
+    z-index0
+
+}
+
+.loader span{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+/* ==========================================
+   SCROLL PROGRESS BAR
+========================================== */
+
+#progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:4px;
+
+    background:#3B82F6;
+
+    z-index:99999;
+
+}/* ======================================
+   ABOUT SECTION
+====================================== */
+
+.about-content{
+
+display:grid;
+
+grid-template-columns:1fr 1.2fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.about-image{
+
+text-align:center;
+
+}
+
+.about-image img{
+
+width:350px;
+
+max-width:100%;
+
+border-radius:20px;
+
+border:4px solid #3B82F6;
+
+box-shadow:0 20px 60px rgba(59,130,246,.35);
+
+transition:.4s;
+
+}
+
+.about-image img:hover{
+
+transform:scale(1.05);
+
+}
+
+.about-text h3{
+
+font-size:38px;
+
+margin-bottom:10px;
+
+}
+
+.about-text h4{
+
+color:#3B82F6;
+
+margin-bottom:20px;
+
+}
+
+.about-text p{
+
+margin-bottom:30px;
+
+}
+
+.about-info{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.about-info div{
+
+background: #0F172A;
+
+padding:20px;
+
+border-radius:15px;
+
+border:1px solid rgba(255,255,255,.05);
+
+transition:.3s;
+
+}
+
+.about-info div:hover{
+
+transform:translateY(-8px);
+
+border-color:#3B82F6;
+
+}
+
+/* ======================================
+   SKILLS
+====================================== */
+
+.skill{
+
+margin-bottom:30px;
+
+}
+
+.progress{
+
+width:100%;
+
+height:14px;
+
+background:#111827;
+
+border-radius:30px;
+
+overflow:hidden;
+
+}
+
+.progress-bar{
+
+height:100%;
+
+background:linear-gradient(90deg,#2563eb,#60a5fa);
+
+display:flex;
+
+justify-content:flex-end;
+
+align-items:center;
+
+padding-right:10px;
+
+font-size:12px;
+
+font-weight:600;
+
+color:white;
+
+border-radius:30px;
+
+}
+
+/* ======================================
+   SERVICES
+====================================== */
+
+.service-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:#1E293B;
+
+padding: 40px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.service-card:hover{
+
+transform:translateY(-12px);
+
+border-color:#3B82F6;
+
+box-shadow:0 20px 50px rgba(59,130,246,.25);
+
+}
+
+.service-card i{
+
+font-size:55px;
+
+color:#3B82F6;
+
+margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+margin-bottom:15px;
+
+}/* ==========================
+   PORTFOLIO IMAGE STYLING
+========================== */
+
+.portfolio-card {
+    background: #1E293B;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(59,130,246,0.5);
+}
+
+.portfolio-card img {
+    width: 250;
+    height: 100;
+    object-fit: covers;
+    display: block;
+}
+
+.portfolio-info {
+    padding: 20px;
+}
+
+.portfolio-info h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.portfolio-info p {
+    color: #bbbbbb;
+    margin-bottom: 15px;
+}
+
+.portfolio-info a {
+    color: #3B82F6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portfolio-info a:hover {
+    color: white;
+}
+/* ======================================
+   PORTFOLIO SECTION
+====================================== */
+
+.portfolio{
+
+    background:#0F172A;
+
+}
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.portfolio-card{
+
+    background:#161b22;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.4s;
+
+}
+
+.portfolio-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 50px rgba(59,130,246,.25);
+
+    border-color:#3B82F6;
+
+}
+
+.portfolio-card img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.portfolio-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.portfolio-info{
+
+    padding:25px;
+
+}
+
+.portfolio-info h3{
+
+    color:white;
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+.portfolio-info p{
+
+    color:#cbd5e1;
+
+    margin-bottom:18px;
+
+}
+
+.portfolio-btn{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:#3B82F6;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.portfolio-btn:hover{
+
+    background:#2563eb;
+
+}
+/* ======================================
+   CONTACT SECTION
+====================================== */
+
+/* ======================================
+   CONTACT SECTION
+====================================== */
+
+.contact{
+
+    background:linear-gradient(135deg,#0B1120,#111827);
+
+    padding:100px 0;
+
+}
+
+.contact-content{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+.contact-info{
+
+    background:#182235;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    transition:.4s;
+
+}
+
+.contact-info:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3B82F6;
+
+}
+
+.contact-info h3{
+
+    color:#FFFFFF;
+
+    margin-bottom:20px;
+
+    font-size:32px;
+
+}
+
+.contact-info p{
+
+    color:#CBD5E1;
+
+    margin-bottom:18px;
+
+}
+
+.contact-info i{
+
+    color:#3B82F6;
+
+    font-size:22px;
+
+    margin-right:12px;
+
+}
+
+.contact-form{
+
+    background:#182235;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    background:#0F172A;
+
+    color:#fbfafa;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:#3B82F6;
+
+    box-shadow:0 0 15px rgba(59,130,246,.25);
+
+}
+
+.contact-form textarea{
+
+    resize:none;
+
+    height:180px;
+
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 16px 30px;
+    font-size: 16px;
+    min-height: 55px;
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer{
+
+    background: #000000;
+
+    text-align:center;
+
+    padding:35px 35px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+footer h2{
+
+    color:#ffffff;
+
+    margin-bottom:30px;
+
+}
+
+footer p{
+
+    color:#a2b0c4;
+
+}
+
+.social-icons{
+
+    margin:35px 0;
+
+}
+
+.social-icons a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:50px;
+
+    height:50px;
+
+    margin:0 10px;
+
+    border-radius:50%;
+
+    background:#1E293B;
+
+    color:#3B82F6;
+
+    font-size:20px;
+
+    transition:.4s;
+
+}
+
+.social-icons a:hover{
+
+    background:#3B82F6;
+
+    color:#ffffff;
+
+    transform:translateY(-8px);
+
+}
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+@media (max-width:992px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding-top:150px;
+
+}
+
+.hero-content{
+
+order:2;
+
+}
+
+.hero-image{
+
+order:1;
+
+margin-bottom:40px;
+
+}
+
+.about-content{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.about-info{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-content{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+h1{
+
+font-size:42px;
+
+}
+
+h2{
+
+font-size:30px;
+
+}
+
+.section{
+
+padding:80px 0;
+
+}
+
+.hero-image img{
+
+width:280px;
+
+height:380px;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.container{
+
+width:92%;
+
+}
+
+.btn{
+
+padding:12px 25px;
+
+}
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+.service-card{
+
+padding:30px;
+
+}
+
+}
+/* ======================================
+   MOBILE MENU
+====================================== */
+
+@media (max-width:768px){
+
+.nav-links.active{
+
+display:flex;
+
+flex-direction:column;
+
+position:absolute;
+
+top:80px;
+
+left:0;
+
+width:100%;
+
+background:#0F172A;
+
+padding:30px 25px;
+
+text-align:center;
+
+gap:20px;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+}
+/* ======================================
+   ACTIVE NAVIGATION
+====================================== */
+
+.nav-links a.active{
+
+    color:#3B82F6;
+
+}
+
+.nav-links a{
+
+    transition:.3s;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+/* ======================================
+   SCROLL ANIMATION
+====================================== */
+
+.section,
+.service-card,
+.portfolio-card,
+.skill{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.section.show,
+.service-card.show,
+.portfolio-card.show,
+.skill.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+/* ======================================
+   SCROLL TO TOP BUTTON
+====================================== */
+
+#scrollTopBtn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#326bc6;
+
+    color:#fff;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:0 10px 25px rgba(59,130,246,.4);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#scrollTopBtn:hover{
+
+    transform:translateY(-5px);
+
+    background:#2563eb;
+
+}
+/* ======================================
+   TYPING EFFECT
+====================================== */
+
+#typing{
+
+    color:#3B82F6;
+
+    font-weight:700;
+
+    border-right:3px solid #3B82F6;
+
+    padding-right:5px;
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        border-color:transparent;
+
+    }
+
+}
+/* ======================================
+   SKILL BAR ANIMATION
+====================================== */
+
+.progress{
+
+    width:100%;
+
+    height:12px;
+
+    background:#333d4f;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    height:100%;
+
+    background: linear-gradient(135deg, #3e4c6e, #2c3f6b, #083262);
+
+    border-radius:30px;
+
+    transition:width 1.5s ease;
+
+    color:white;
+
+    text-align:right;
+
+    padding-right:10px;
+
+    font-size:12px;
+
+    line-height:12px;
+
+}
+/* ======================================
+   IMAGE LIGHTBOX
+====================================== */
+
+#lightbox{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.9);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+#lightbox img{
+
+    max-width:90%;
+
+    max-height:85%;
+
+    border-radius:15px;
+
+    box-shadow:0 0 40px rgba(59,130,246,.5);
+
+}
+
+#close-lightbox{
+
+    position:absolute;
+
+    top:30px;
+
+    right:40px;
+
+    color:white;
+
+    font-size:60px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#close-lightbox:hover{
+
+    color:#3B82F6;
+
+}
+/* ======================================
+   BUTTON RIPPLE EFFECT
+====================================== */
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ripple{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    animation:ripple .6s linear;
+
+    background:rgba(255, 255, 255, 0.607);
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:scale(4);
+
+        opacity:0;
+
+    }
+
+}
